@@ -7,7 +7,6 @@ function ajax(){
 	function showPhotos(data) {
 		var photoList = '<ul>';
 		$.each(data.items, function(i, photo) {
-			// photoList += '<li>';
 			photoList += '<img src="' + photo.media.m + '">';
 			if(i==0)return false;
 		});
